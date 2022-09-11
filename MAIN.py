@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from VARIABLES import *
-
+import pyscreenshot
 def getPrice(url):
     content = requests.get(url).text
     soup = BeautifulSoup(content, "html.parser")
